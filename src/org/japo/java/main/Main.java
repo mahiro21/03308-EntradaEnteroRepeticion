@@ -42,15 +42,14 @@ public class Main {
         //Inicio bucle
         do {
             try {
-                System.out.println("Insert int valor");
+                System.out.print("Insert int valor...:");
                 numero = SCN.nextInt();
-                SCN.nextLine();
                 error = false;
             } catch (Exception e) {
                 error = true;
                 System.out.println("Not int valor");
+            } finally {
                 SCN.nextLine();
-
             }
         } while (error == true);
         System.out.println("END");
